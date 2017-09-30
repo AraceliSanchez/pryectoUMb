@@ -2,13 +2,131 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Mi Segunda Pagina</title>
-</head>
-<body>
-	<h1>Segunda Pagina </h1>
-	<p>Estoy Aburrida</p>
-	<a href="index.html">Link</a>
-	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<title>IoT</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" >
+    <link rel="stylesheet" href="css/custom.css">
+
+	<center> <img src="img/img1.jpg" alt="Responsive image" class="img-thumbnail"></center>
+		
+</head>
+<body><!--
+	<h1>Segunda Pagina </h1>
+
+	<p>Estoy Aburrida</p>
+
+	<a href="index.html">Link</a>-->
+	<div id="nav"><center>
+		<nav>
+			<a href="menu.html" >Home</a>
+			<a href="servicios.html" >Servicios</a>
+			<a href="galeria.html">Galeria</a>
+			<a href="blog.html"> Blog</a>
+			<a href="" class="right-space">Contacto</a>
+		</nav></center>	
+	</div>
+	<form method="post" action="registrar.php">
+		<div class="my-content" >
+			<div class="container" > 
+            <div class="row">
+            	<div class="col-sm-12" >
+            	 <h1><strong> ¡ TAREA... ! </strong></h1>
+            	</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 myform-cont" >
+                    <div class="myform-top">
+                        <div class="myform-top-left">
+                          <h3>Regístrate en nuestro sitio.</h3>
+                            <p>Ingresa tus datos personales:</p>
+                        </div>
+                        <div class="myform-top-right">
+                          <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="myform-bottom">
+                      <form role="form" action="" method="post" class="">
+                        <div class="form-group">
+                            <input  title="Se necesita un nombre"  type="text" name="nombre" placeholder="Nombres..." class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="apellidos" placeholder="Apellidos..." class="form-control" id="apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Teléfono (10 dígitos comenzando por 55 o 71)</label>
+                            <input type="text" placeholder="Teléfono" name="telefono" class="form-control" id="telefono" pattern="^[55|71]\d{8}$">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="e-mail" id="e-mail"  placeholder="E-mail" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" title="Correo no valido" required="" >
+                        </div></br>
+                        <button type="submit" class="mybtn" id="submit">Iniciar</button>
+                      </form>
+                    </div>
+              </div>
+            </div>
+
+        </div>
+        <div id="article">
+			<article>
+				<header>
+					<h2>Articulo 1</h2>
+					<img src="img/1.jpg" alt="Responsive image" class="img-thumbnail">
+
+				</header>
+				<p>Este articulo <b> no contiene nada</b></p>
+				
+				<footer>
+					<div class="credit row" style="height:30px;" >
+						
+						<p>publicado por Ara</p>
+					</div>
+
+				</footer>
+			</article>
+			<div id="article">
+				<article>
+					<header>
+						<h2>Articulo 2</h2>
+						<img src="img/2.jpg" alt="Responsive image" class="img-thumbnail">
+					</header>
+					<footer>
+						<div class="credit row" style="height:25px;">
+						<p><small>publicado por Ara</small></p>
+					</div>
+
+					</footer>
+
+				</article>
+				<div id="article">
+					<article>
+						<header>
+							<h2>Articulo 3</h2>
+							<img src="img/3.jpg" alt="Responsive image" class="img-thumbnail">
+						</header>
+					<footer>
+						<div class="credit row" style="height:25px;">
+						<p><small>publicado por Ara</small></p>
+					</div>
+
+					</footer>
+
+				</article>
+			</div>
+		</div>
+	</div>
+      </div>
+    <script src="js/bootstrap.min.js"></script>
+    </form>
+	<div id="main">
+		
+	<footer class="container">
+		<div class="credit row" style="height:90px;">
+			<h6>Esto es el pie de pagina</h6>
+		</div>
+	</footer>
 </body>
 </html>
